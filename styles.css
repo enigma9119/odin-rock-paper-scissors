@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: center url("./images/background.jpg");
+  background-size: cover;
+  font-family: "Times New Roman", Times, sans-serif;
+}
+
+body {
+  font-size: 20px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.selections {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+button {
+  flex: 1;
+  font-size: 30px;
+  font-style: italic;
+  padding: 20px 30px;
+  border: 5px solid rgb(160, 107, 9);
+  font-weight: bold;
+  color: black;
+  background-color: beige;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px black;
+}
+
+button:hover {
+  background-color: rgb(228, 228, 146);
+}
+
+.result {
+  height: 1em;
+  text-align: center;
+  color: brown;
+  font-weight: bold;
+}
+
+.score {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.score h2 {
+  margin-bottom: 8px;
+}
