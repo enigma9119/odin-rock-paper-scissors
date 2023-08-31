@@ -49,7 +49,13 @@ function game() {
   let computerScore = 0;
 
   for (let i = 0; i < 5; ++i) {
-    const playerSelection = prompt("What do you choose?", "rock").toLowerCase();
+    let playerSelection = prompt("What do you choose?");
+    if (!playerSelection || !choices.includes(playerSelection)) {
+      playerSelection = "rock";
+    } else {
+      playerSelection.toLowerCase();
+    }
+
     const computerSelection = getComputerChoice();
 
     const winner = playRound(playerSelection, computerSelection);
